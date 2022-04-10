@@ -1,0 +1,141 @@
+4
+$ git clone https://github.com/IvonaStojcheska/SI_2022_lab1_203109.git
+
+5
+$ git commit -m "Add 5 items to the shopping list"
+
+6
+$ git commit -m "Add quantities to the items"
+
+7
+$ git branch branch1
+$ git branch branch2
+
+8
+$ git log
+commit 4a4b1f900224f44427484053803906b48359ccae (HEAD -> master, branch2, branch1)
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:13:04 2022 +0200
+
+    Add quantities to the items
+
+commit 7b0ad9289fa30f76f4ce07f2512ae5acb129ceac
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:11:42 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 517a6447e9f5ed2929e5546c891f236c043b444c (origin/master, origin/HEAD)
+Author: Ivona Stojcheska <101434451+IvonaStojcheska@users.noreply.github.com>
+Date:   Sun Apr 10 13:09:17 2022 +0200
+
+    Update README.md
+
+commit 04b706f7d50ee2a3420b8bb345cb885b0902b41e
+Author: Ivona Stojcheska <101434451+IvonaStojcheska@users.noreply.github.com>
+Date:   Sun Apr 10 13:08:54 2022 +0200
+
+9
+$ git push --all origin
+
+10
+$ git checkout branch1
+
+11
+$ git commit -m "Change quantity of item #5"
+
+12
+$ git checkout master
+
+13
+$ git commit -m "Change quantity of item #2"
+
+14
+$ git push --all origin
+
+15
+$ git checkout branch2
+
+16
+$ git commit -m "Modify item #4"
+
+17
+$ git log
+commit ea79398fdfcbc228732ed0ad7ef4541ccd193fb9 (HEAD -> branch2)
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:22:28 2022 +0200
+
+    Modify item #4
+
+commit 4a4b1f900224f44427484053803906b48359ccae (origin/branch2)
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:13:04 2022 +0200
+
+    Add quantities to the items
+
+commit 7b0ad9289fa30f76f4ce07f2512ae5acb129ceac
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:11:42 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 517a6447e9f5ed2929e5546c891f236c043b444c
+Author: Ivona Stojcheska <101434451+IvonaStojcheska@users.noreply.github.com>
+Date:   Sun Apr 10 13:09:17 2022 +0200
+
+    Update README.md
+
+
+18
+$ git commit --amend -m "Modify item #4 and add item #6"
+
+19
+$ git log
+commit c89f693b6aff86033308ce5cb27a5001811bc518 (HEAD -> branch2)
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:22:28 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 4a4b1f900224f44427484053803906b48359ccae (origin/branch2)
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:13:04 2022 +0200
+
+    Add quantities to the items
+
+commit 7b0ad9289fa30f76f4ce07f2512ae5acb129ceac
+Author: IvonaStojcheska <ivojastojceska99@gmail.com>
+Date:   Sun Apr 10 13:11:42 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 517a6447e9f5ed2929e5546c891f236c043b444c
+Author: Ivona Stojcheska <101434451+IvonaStojcheska@users.noreply.github.com>
+Date:   Sun Apr 10 13:09:17 2022 +0200
+
+    Update README.md
+
+20
+$ git checkout master
+Конфликти нема, а спојувањето се врши рекурзивно пораду тоа што веќе имаме комит на мастер
+и откако сме ја создале гранката1
+
+21
+$ git merge branch2
+При ова спојување настануваат конфликти. После отварање на документот и решавање на конфликтите
+(јас одбрав да се земат за правилни промените направеми на гранката2)
+гранките се спојуваат рекурзивно
+$ git commit -m "Merged branch2"
+
+
+
+
+
+
+
+
+
+
+
+
+
