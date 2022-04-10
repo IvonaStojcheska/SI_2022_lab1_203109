@@ -1,5 +1,6 @@
 jabolko x1
 banana x20
 sliva x3
-krusa x4
-morkov x50
+ananas x4
+morkov x5
+kokos
