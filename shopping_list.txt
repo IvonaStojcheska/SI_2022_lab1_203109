@@ -1,5 +1,5 @@
-jabolko
-banana
-sliva
-krusa
-morkov
+jabolko x1
+banana x2
+sliva x3
+krusa x4
+morkov x5
