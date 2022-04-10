@@ -1,1 +1,1 @@
-# SI_2022_lab1_203109
+Ivona Stojcheska 203109
